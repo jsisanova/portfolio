@@ -1,0 +1,70 @@
+* { box-sizing: border-box; }
+
+body {
+  background-color: rgb(228, 218, 126);
+}
+
+.whole-calculator {
+  width: 320px;
+  height: 301px;
+  margin: 150px auto;
+  padding-top: 6px;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 5px 5px 10px 4px rgb(233, 193, 90);
+}
+
+.screen {
+  width: 229.5px;
+  height: 45px;
+  border: 1px solid rgb(155, 164, 164);
+  margin: 0 6px 6px 6px;
+}
+
+span, .screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: left;
+  border-radius: 3px;
+  font-size: 1.1em;
+}
+
+span {
+  cursor: pointer;
+}
+
+.clear {
+  width: 72.5px;
+  height: 45px;
+  background-color: rgb(209, 65, 51);
+  font-weight: bold;
+  margin: 0 0 6px 6px;
+  text-transform: uppercase;
+}
+
+.keys {
+  width: 72.5px;
+  height: 55px;
+  margin-left: 6px;
+  margin-bottom: 6px;
+  background-color: rgba(53, 173, 199, 0.61);
+  font-weight: bold;
+}
+
+span {
+  cursor: pointer;
+}
+
+.operator {
+  background-color: rgb(186, 181, 186);
+}
+
+.calculate {
+  background-color: rgb(92, 99, 99);
+}
+
+.keys:hover, .keys:focus,
+.clear:hover, .clear:focus {
+  background-color: rgb(193, 197, 208);
+}

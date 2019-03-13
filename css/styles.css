@@ -1,0 +1,834 @@
+* { box-sizing: border-box; }
+
+/**** Index page ****/
+/*navigation*/
+.navigation {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(30, 32, 36, 1);
+  z-index: 5;
+}
+
+.navigation ul {
+  float: right;
+}
+
+.navigation li {
+  display: inline-block;
+  padding: 10px 0;
+}
+
+.navigation a {
+  display: block;
+  padding: 25px 15px;
+}
+
+.navigation li a:hover, .navigation li a:focus {
+  background-color: black;
+}
+
+.home {
+  -webkit-transition: transform 2s ease;
+  transition: transform 2s ease;
+}
+
+.home:hover {
+  -webkit-transform: rotateX(360deg);
+  -ms-transform: rotateX(360deg);
+  transform: rotateX(360deg);
+}
+
+.navbar-toggle p {
+  display: inline;
+}
+
+.navbar-toggle {
+  border: rgba(30, 32, 36, 1);
+  width: 110px;
+}
+
+.nav-icons {
+  float: right;
+}
+
+.nav-picture img {
+  width: 15%;
+}
+
+.nav-picture p {
+  display: inline;
+  padding-left: 10px;
+}
+
+.nav-picture {
+  position: absolute;
+  left: 5px;
+  top: 0;
+}
+
+#dLabel {
+  padding: 15px;
+}
+
+
+.dropdown-menu a {
+  background-color: rgb(194, 196, 185);
+  padding: 8px 7px !important;
+}
+
+.dropdown-menu li {
+  display: block;
+  padding: 0;
+  border: 1px solid white;
+}
+
+.dropdown-menu a:hover, .dropdown-menu a:focus {
+  background-color: white !important;
+}
+
+.divider {
+  margin: 5px !important;
+  border: rgb(194, 196, 185) !important;
+}
+
+.container {
+  padding: 0;
+  width: 100%;
+}
+
+
+/*carousel*/
+.anchor {
+  padding-top: 70px;
+}
+
+.carousel-logo img {
+  position: absolute;
+  bottom: 250px;
+  right: 40px;
+  width: 100px;
+  opacity: 0.4;
+}
+
+.carousel h1 {
+  position: relative;
+  padding-bottom: 110px;
+}
+
+.carousel-inner > .item {
+  max-height: 100vh;
+}
+
+/*jumbotron*/
+.jumbotron {
+  background-image: url("https://static.pexels.com/photos/4827/nature-forest-trees-fog.jpeg");
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+}
+
+#jumbotron {
+  margin-bottom: 0;
+}  /*to override bootstrap*/
+
+.jumbotron p {
+  background-color: rgb(18, 41, 30);
+  display: inline;
+  padding: 5px 15px;
+  border-radius: 15%;
+}
+
+
+/*containers*/
+.yellow-container {
+  background-color: #f5b71a;
+}
+
+.white-container {
+  width: 80%;
+  top: -20px;
+  margin: auto;
+  padding: 35px 40px;
+  background-color: white;
+}
+
+.btn-default {
+  margin-left: 90px;
+}
+
+.white-about {
+  padding-top: 0;
+}
+
+/*index - typography*/
+p,
+li,
+a,
+h1,
+h2,
+h3,
+h4,
+.btn-default {
+  font-family: 'Raleway', 'Arial', sans-serif;
+  letter-spacing: 1px;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+.navigation li {
+  font-size: 1em;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: rgb(194, 196, 185);
+  text-transform: uppercase;
+}
+
+.navigation li a:hover, .navigation li a:focus {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: white;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+
+.navbar-toggle p {
+  color: white;
+  text-transform: uppercase;
+}
+
+.nav-picture p {
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 2.5em;
+  color: #f5b71a;
+  letter-spacing: 2px;
+}
+
+.dropdown-menu a {
+  font-size: 0.9em;
+  font-weight: 600 !important;
+  color: black !important;
+}
+
+.carousel h1 {
+  font-size: 6em;
+  font-weight: bold;
+  font-family: 'Gloria Hallelujah', cursive;
+  text-transform: uppercase;
+}
+
+.jumbotron p {
+  font-size: 1.5em;
+  color: #f5b71a;
+}
+
+.jumbotron h1 {
+  font-weight: bold;
+  color: rgb(47, 35, 12);
+  font-variant: small-caps;
+}
+
+.jumbotron h2 {
+  font-size: 2.5em;
+  color: rgb(18, 41, 30);
+  font-weight: 700;
+}
+
+.concept h2 {
+  font-size: 1.9em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.concept a {
+  text-decoration: none;
+}
+
+
+/*media query for index page*/
+@media (max-width: 768px) {
+  .carousel h1 {
+    font-size: 3.5em;
+    padding-bottom: 20px;
+  }
+
+  .carousel-logo img {
+    width: 85px;
+    bottom: 120px;
+    right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    margin-top: 50px;
+  } /*to fix the problem with navigation*/
+
+  .carousel h1 {
+    padding-bottom: 0;
+    font-size: 2em;
+  }
+
+  .carousel-logo img {
+    width: 60px;
+    bottom: 80px;
+  }
+
+  .white-container h2 {
+    font-size: 1.5em;
+  }
+
+  .jumbotron h2 {
+    font-size: 2em;
+  }
+
+  .jumbotron p {
+    font-size: 1.2em;
+  }
+
+  .header h1 {
+    font-size: 1.6em ;
+  }
+
+  .btn-default {
+    margin-left: 40px;
+  }
+}
+
+
+
+/****About page ****/
+.column img {
+  margin-left: -20px;
+}
+
+.header h1 {
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.header h1::after {
+    content: "";
+    display: block;
+    width: 75px;
+    height: 6px;
+    background-color: CornflowerBlue;
+    position: absolute;
+    bottom: -30px;
+    right: 48%;
+  }
+
+.img-river {
+  border: 5px solid rgb(201, 223, 232);
+}
+
+.skill {
+  background-color: rgb(191, 123, 7);
+  border-radius: 30%
+}
+
+#skill-list {
+  margin-left: 30px;
+}
+
+#about .image {
+  padding: 30px;
+}
+
+.main-text {
+  padding-top: 40px;
+}
+
+/*video*/
+.wrapper {
+  width: 76%;
+  margin: 65px auto 0;
+}
+
+.h_iframe {
+   position: relative;
+ }
+
+.h_iframe .ratio {
+  display:block;
+  width:100%;
+  height:auto;
+}
+
+.h_iframe iframe {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;}
+
+/*about - Typography*/
+.header h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.skill h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.skill {
+  color: #FFF;
+}
+
+@media (max-width: 991px) {
+  .skill {
+    margin: 25px auto;
+  }
+
+  #skill-list {
+    margin-left: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  #about .image {
+    padding: 0;
+  }
+
+  #skill-list {
+    margin-left: 5px;
+  }
+}
+
+
+
+/****Work page****/
+#row-work {
+  border: 1px solid black;
+}
+
+#row-work header {
+  padding-bottom: 45px;
+}
+
+.projects {
+  border: 1.5px solid white;
+  background-color: rgba(215, 221, 223, 0.96);
+}
+
+.projects:hover, .projects:focus {
+  background-color: rgb(225, 227, 140);
+}
+
+.work-img {
+  display: block;
+  margin: 20px auto;
+  max-width: 200px; /* needs to be set to the width of your image files if they are relatively small */
+  position: relative; /* is needed for .info position: absolute to work */
+  background-color: white;
+}
+
+.projects:nth-child(n+4) {
+  opacity: 0.4;
+}
+
+.info {
+  display: none;
+  position: absolute; /* let's us move the text around and not worry about the image */
+  width: 100%;
+  top: 0;
+  padding: 17px 25px;
+  background-color: rgba(215, 221, 223, 0.9);
+  color: #f5b71a;
+}
+
+
+/*work - typography*/
+.info {
+  font-size: 22px;
+  color: salmon;
+  font-family: Futura;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  line-height: 1.4;
+}
+
+.proj-title {
+  font-weight:600;
+}
+
+
+/**** Contact page ****/
+/*parallax effect*/
+#contact{
+    background-image: url("../img/pic3.jpg");
+/*Add a background image*/
+    background-attachment: fixed;
+/*Give the background a fixed position does it not scroll when you scroll*/
+    background-size: cover;
+    padding:100px;
+    padding-top: 50px;
+    height: 1410px;
+}
+
+
+/*contact*/
+#contact {
+  padding-top: 70px;
+  padding-right: 20px;
+}
+
+.glyphicon-cloud {
+  visibility: hidden;
+}
+
+.contact {
+  padding: 0;
+  margin-left: 35px;
+  margin-top: 40px;
+}
+
+.contact ul {
+  margin: 0;
+  padding: 0;
+}
+
+.contact li {
+  display: inline-block;
+}
+
+.social {
+  padding-top: 30px;
+  margin-left: -50px;
+}
+
+.social a {
+  display: block;
+  padding: 15px;
+  width: 60px;
+  height: 60px;
+}
+
+.social i:hover, .social i:focus {
+  border-radius: 30%;
+  padding: 6px;
+  width: 55px;
+  height: 55px;
+}
+
+.fa-facebook:hover, .fa-facebook:focus {
+  border: 5px solid #3b5998;
+}
+
+.fa-google-plus:hover, .fa-google-plus:focus {
+  border: 5px solid #dd4b39;
+}
+
+.fa-linkedin:hover, .fa-linkedin:focus {
+  border: 5px solid #007bb6;
+}
+
+.fa-skype:hover, .fa-skype:focus {
+  border: 5px solid #12A5F4;
+}
+
+.fa-twitter:hover, .fa-twitter:focus {
+  border: 5px solid #00aced;
+}
+
+.social .fa-envelope:hover, .fa-envelope:focus {
+  border: 5px solid #f5b71a;
+}
+
+/*form*/
+.form-control {
+  width: 95%;
+}
+
+.label-required:after {
+  content:"*";
+}
+
+.contact-form {
+  padding: 35px 0;
+}
+
+.form-group:first-of-type {
+  padding: 0;
+}
+
+#button-submit {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+/*google map*/
+.map-container {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+  float: right;
+  margin-right: 105px;
+}
+
+#map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 50% !important;
+  }
+
+
+/*contact - typography*/
+.contact p {
+  font-size: 2em;
+  line-height: 1.5em;
+}
+
+.fa-facebook:hover, .fa-facebook:focus {
+  color: #3b5998;
+}
+
+.fa-google-plus:hover, .fa-google-plus:focus {
+  color: #dd4b39;
+}
+
+.fa-linkedin:hover, .fa-linkedin:focus {
+  color: #007bb6;
+}
+
+.fa-skype:hover, .fa-skype:focus {
+  color: #12A5F4;
+}
+
+.fa-twitter:hover, .fa-twitter:focus {
+  color: #00aced;
+}
+
+.social .fa-envelope:hover, .fa-envelope:focus {
+  color: #f5b71a;
+}
+
+.label-required:after {
+  color: red;
+}
+
+/*media query for contact*/
+@media (max-width: 991px) {
+  #contact {
+    height: 1680px;
+  }
+
+  .contact {
+    margin-left: 0;
+  }
+
+  .form-control {
+    width: 85%;
+  }
+
+  .form-group {
+    padding: 0;
+  }
+
+  .map-container {
+    margin-right: 50px;
+  }
+
+  #map {
+    width: 80% !important;
+    height: 80% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #contact {
+    height: 1500px;
+  }
+
+  .contact p {
+    font-size: 1.5em;
+    margin: -10px;
+  }
+
+  .map-container {
+    margin-right: 60px;
+  }
+
+  #map {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
+@media (max-width: 480px) {
+  #contact {
+    height: 1280px;
+  }
+
+  .contact p {
+    font-size: 1.1em;
+    margin-left: -50px;
+  }
+
+  .social {
+    width: 200px;
+    margin-left: -80px;
+  }
+
+  .form-control {
+    width: 100%;
+    margin-left: -30px;
+  }
+
+}
+
+
+
+/****FAQ page****/
+#faq {
+  background-image: url("../img/pic1.jpg");
+  background-size: cover;
+  background-position: bottom center;
+  background-attachment: fixed;
+}
+
+.learn-more {
+  float: left;
+  text-align: center;
+  margin-left: 130px;
+}  /*header*/
+
+.modal-button {
+  float: right;
+  padding: 20px;
+  margin-right: 240px;
+}
+
+.modal-content {
+  background-color: rgb(191, 123, 7);
+}
+
+#myModalLabel {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+#modalembed {
+    height: 500px;
+    width: 100%;
+    padding: 20px;
+}    /*cv*/
+
+
+/*accordion*/
+.panel-group {
+  margin-top: 20px;
+  margin-bottom: 150px;
+}
+
+#accordion .panel-heading {
+  background-color: rgb(191, 123, 7);
+}
+
+.panel-body {
+  background-color: rgba(215, 221, 223, 0.96);
+}
+
+.panel-heading [data-toggle="collapse"]:after {
+  content: "\e072"; /* "play" icon */
+  float: right;
+
+  /* rotate "play" icon from > (right arrow) to down arrow */
+  -webkit-transform: rotate(-90deg);
+     -moz-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+       -o-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.panel-heading [data-toggle="collapse"].collapsed:after {
+  /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+  -webkit-transform: rotate(90deg);
+     -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+       -o-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+/*faq - typography*/
+.panel-heading [data-toggle="collapse"]:after {
+  font-family: 'Glyphicons Halflings';
+  font-size: 1.2em;
+}
+
+.panel-heading h4 {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  color: rgb(188, 200, 188);
+}
+
+#accordion a:hover, #accordion a:focus {
+  color: white;
+  text-decoration: none;
+}
+
+
+/*media query faq*/
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.6em !important;
+    margin-left: -100px;
+  }
+
+  .panel-group {
+    margin-top: 30px;
+  }
+
+  .modal-button {
+    margin-right: 45px;
+  }
+}
+
+
+/*footer*/
+footer {
+  background-color: rgb(191, 123, 7);
+  padding: 15px 0 10px 0;
+  margin-bottom: -50px;
+}
+
+footer p {
+  padding-right: 70px;
+  font-size: 1em;
+  text-align: center;
+}
+
+.twitter-follow-button, .fb-like {
+  float: left;
+}
+
+.twitter-follow-button {
+  margin-left: 40px;
+}
+
+.fb-like {
+  margin-left: 20px;
+}
+
+@media (max-width: 480px) {
+  .fb-like {
+    float: none;
+  }
+
+  footer p {
+    margin-top: 10px;
+    padding-right: 0;
+  }
+}
